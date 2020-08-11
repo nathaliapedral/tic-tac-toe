@@ -11,3 +11,33 @@ body {
     height: 100px;
     border-radius: 5px;
 }
+
+.playerZero {
+    position: relative;
+}
+
+.playerZero::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 100px;
+    content: "\2B55";
+    font-size: 50px;
+}
+
+.playerX {
+    position: relative;
+}
+
+.playerX::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 100px;
+    content: "\274C";
+    font-size: 50px;
+}

@@ -46,7 +46,7 @@ function makeMove(boardPosition) {
         playerTime = 0;
         addSymbolToBoard(symbols[1], boardPosition);
         gameOver = isWinner();
-        if (!gameOver) changeTurnTitle(symbols[1]);
+        if (!gameOver) changeTurnTitle(symbols[0]);
     }
 
     return gameOver;

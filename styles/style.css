@@ -12,11 +12,11 @@ body {
     border-radius: 5px;
 }
 
-.playerZero {
+.playerO {
     position: relative;
 }
 
-.playerZero::after {
+.playerO::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,4 +40,9 @@ body {
     line-height: 100px;
     content: "\274C";
     font-size: 50px;
+}
+
+#currentPlayer {
+    font-size: 20px;
+    margin-bottom: 20px;
 }

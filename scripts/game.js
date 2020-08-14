@@ -22,7 +22,9 @@ function isWinner() {
         let pos2 = state[1];
         let pos3 = state[2];
 
-        if (board[pos1] == board[pos2] && board[pos1] == board[pos3] && board[pos1] != '') {
+        if (board[pos1] == board[pos2] &&
+            board[pos1] == board[pos3] &&
+            board[pos1] != '') {
             return true;
         }
     }
@@ -32,6 +34,7 @@ function isWinner() {
 
 function makeMove(boardPosition) {
 
+    console.log(gameOver);
     if (gameOver) return;
 
     if (playerTime == 0 && board[boardPosition] == '') {
@@ -51,4 +54,12 @@ function makeMove(boardPosition) {
 
     return gameOver;
 
+}
+
+function resetGame() {
+    gameOver = false;
+    playerTime = 0;
+    board = ['', '', '', '', '', '', '', '', ''];
+    document.getElementById("currentPlayer").innerHTML = `Player O starts`;
+    resetBoard();
 }

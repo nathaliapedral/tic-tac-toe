@@ -46,3 +46,18 @@ body {
     font-size: 20px;
     margin-bottom: 20px;
 }
+
+#reset {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 150px;
+    padding: 5px;
+    background-color: rgb(187, 33, 243);
+    border: none;
+    border-radius: 5px;
+}
+
+#reset:hover {
+    background-color: rgb(143, 25, 185);
+    color: whitesmoke;
+}
